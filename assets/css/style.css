@@ -1,3 +1,10 @@
+/* Cores 
+--1 #06BFBF (azul calro)
+--2 #07F2B0 (verde agua)
+*/
+
+
+
 .app {
     background: #f1f1f1;
     display: grid;  
@@ -24,3 +31,27 @@
     background: #0099ff;
     grid-area: rodape;
 }
+
+
+    body{
+        background-color: rgba(0, 0, 0, 0.562);
+    }
+
+    div{
+        border: solid 2px black;
+        border-radius: 20px 50px 60px 80px;
+        border-color: aqua;
+        margin-top: 20px;
+        
+    }
+
+    ul{
+        list-style: none;
+        display: flex;
+        
+    }
+
+    li{
+        margin: 0 20px;
+    }
+
