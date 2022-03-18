@@ -6,6 +6,24 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap');
 
+@keyframes bouce {
+    0%, 20%, 60%, 100%{
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    
+    40% {
+        -webkit-transform: translateY(-20px);
+        transform: translateY(-20px);
+
+    }
+    80% {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+
+    }
+
+}
 
 .app {
     background: #f1f1f1;
@@ -58,7 +76,7 @@ header{
     width: 25%;
 }
 
-.sociais__logo{
+.sociais__logo1, .sociais__logo2, .sociais__logo3{
     width: 35px;
     height: 35px;
     border-radius: 5px;
@@ -66,7 +84,7 @@ header{
     border: none;
     margin-right: 5px;
 }
-.sociais__logo i{
+.sociais__logo1, .sociais__logo2, .sociais__logo3 , i{
     font-size: 23px;
 }
 
@@ -78,7 +96,26 @@ header{
 .menu nav a{
     color: white;
     text-decoration: none;
-    padding-right: 30px;
+    padding-right: 50px;
     font-size: 20px;
 }
 
+input{
+    border-radius: 5px;
+    border: none;
+    padding: 5px 10px;
+    margin: auto;
+
+}
+
+.sociais__logo1:hover{
+    animation: bouce 1s;
+}
+
+.sociais__logo2:hover{
+    animation: bouce 1s;
+}
+
+.sociais__logo3:hover{
+    animation: bouce 1s;
+}
