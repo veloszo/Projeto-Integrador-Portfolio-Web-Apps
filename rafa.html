@@ -9,48 +9,26 @@
     <link href="./assets/css/reset.css" rel="stylesheet">
     <link href="./assets/css/style.css" rel="stylesheet">
 </head>
-<style>
-
-    body{
-        background-color: rgba(0, 0, 0, 0.562);
-    }
-
-    div{
-        border: solid 2px black;
-        border-radius: 20px 50px 60px 80px;
-        border-color: aqua;
-        margin-top: 20px;
-        
-    }
-
-    ul{
-        list-style: none;
-        display: flex;
-        
-    }
-
-    li{
-        margin: 0 20px;
-    }
-
-</style>
-
-
-
-
+<script src="https://kit.fontawesome.com/dcef36fe73.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <head>
-        <div>
+    <header>
+      <div class="container">
+        <div class="logo"><img src="assets/img/logo.png" alt="logo-empresa"></div>
+        <div class="menu">
             <nav>
-                <ul>
-                    <li>teste</li>
-                    <li>teste</li>
-                    <li>teste</li>
-                    <li>teste</li>
-                </ul>
-            </nav>
+                <a href="#">Home</a>
+                <a href="#">sobre</a>
+                <a href="#">contato</a>
+                <input type="text" name="filter" class="filter">
+             </nav>
+            </div>           
+            <div class="sociais">
+                <button class="sociais__logo"><i class="fa-brands fa-instagram"></i></button>
+                <button class="sociais__logo"><i class="fa-brands fa-github"></i></button>
+                <button class="sociais__logo"><i class="fa-brands fa-twitter"></i></button>
+            </div>
         </div>
-    </head>
+    </header>
 </body>
 </html>

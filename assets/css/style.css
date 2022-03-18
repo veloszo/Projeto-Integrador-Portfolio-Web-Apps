@@ -4,6 +4,8 @@
 */
 
 
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap');
+
 
 .app {
     background: #f1f1f1;
@@ -33,25 +35,50 @@
 }
 
 
-    body{
-        background-color: rgba(0, 0, 0, 0.562);
-    }
+.container{
+    max-width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-    div{
-        border: solid 2px black;
-        border-radius: 20px 50px 60px 80px;
-        border-color: aqua;
-        margin-top: 20px;
-        
-    }
+header{
+    background-color: black;
+    width: 100%;
+    padding: 10px;
+}
 
-    ul{
-        list-style: none;
-        display: flex;
-        
-    }
+.logo{
+    width: 25%;
+    cursor: pointer;
+}
 
-    li{
-        margin: 0 20px;
-    }
+.sociais{
+    width: 25%;
+}
+
+.sociais__logo{
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+    background-image: linear-gradient(to right top, #005c53, #007059, #1e8558, #409852, #66ab47, #7cb741, #94c239, #adcd30, #b8d62e, #c3e02d, #cfe92a, #dbf227);
+    border: none;
+    margin-right: 5px;
+}
+.sociais__logo i{
+    font-size: 23px;
+}
+
+.menu{
+    width: 80%;
+    font-family: 'Fredoka', sans-serif;
+}
+
+.menu nav a{
+    color: white;
+    text-decoration: none;
+    padding-right: 30px;
+    font-size: 20px;
+}
 
