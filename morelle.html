@@ -8,13 +8,31 @@
     <link href="./assets/css/normalize.css" rel="stylesheet">
     <link href="./assets/css/reset.css" rel="stylesheet">
     <link href="./assets/css/temporario.css" rel="stylesheet">
+    <link href="./assets/css/style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/dcef36fe73.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <h1>Cadastrar</h1>
+        <div class="container">
+            <div class="logo"><img src="assets/img/logo.png" alt="logo-empresa"></div>
+            <div class="menu">
+                <nav>
+                    <a href="#">Home</a>
+                    <a href="#">sobre</a>
+                    <a href="#">contato</a>
+                    <input type="text" placeholder="Pesquisar" class="filter">
+                 </nav>
+                </div>           
+                <div class="sociais">
+                    <button class="sociais__logo1"><i class="fa-brands fa-instagram"></i></button>
+                    <button class="sociais__logo2"><i class="fa-brands fa-github"></i></button>
+                    <button class="sociais__logo3"><i class="fa-brands fa-linkedin-in"></i></button>
+                </div>
+            </div>
     </header>
     <main>
         <form>
+            <h1>CADASTRAR</h1>
             <div class="login">
                 <label for="email">Digite seu email</label>
                 <input type="email" id="email"   placeholder="Usuário@email.com">
@@ -25,30 +43,38 @@
                 <label for="senha">senha</label>
                 <input type="password" id="senha">
 
-                <label for="senha">Confirme a Senha</label>
-                <input type="password" id="senha">
+                <label for="confirmarsenha">Confirme a Senha</label>
+                <input type="password" id="confirmarsenha">
 
                 <input type="submit"  value="ENVIAR" class="enviar">
             </div>
         </form>
-
-            <div class="plataforma">
-                <ul>
-                    <li class="controle">
-                        <h2>Computador</h2>
-                        <img src="./assets/img/pc.png" class="plataformaImg">
+        <fieldset">
+        <div class="plataforma">
+            <ul>
+                <input type="checkbox" time="time" id="pc">    
+                <label for="pc">
+                    <li id="pc">      
+                            <h2>Computador</h2>
+                            <img src="./assets/img/pc.png" class="plataformaImg"></label>
                     </li>
-                    <li class="controle">
-                        <h2 >Mobile</h2>
-                        <img src="./assets/img/phone.png" class="plataformaImg">
-                    </li>
-                    <li class="controle">
+                </label>        
+                <input type="checkbox"  name="time" id="controle">   
+                <label for="controle">             
+                <li id="mobile">     
+                    <h2 >Mobile</h2>
+                    <img src="./assets/img/phone.png" class="plataformaImg">
+                </li>
+                </label>
+                <input type="checkbox" name="time" id="console">     
+                <label for="console">            
+                    <li id="console">
                         <h2>Console</h2>
                         <img src="./assets/img/controle.png" class="plataformaImg">
                     </li>
-                </ul>
-            </div>
-
+                </label>
+            </ul>
+</fieldset>
 
     </main>
 </body>
