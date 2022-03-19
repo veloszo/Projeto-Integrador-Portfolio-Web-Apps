@@ -32,15 +32,18 @@
     </header>
     <main>
         <form>
-            <h1>CADASTRAR</h1>
+            <h1 class="titulo">CADASTRAR</h1>
             <div class="login">
-                <label for="email">Digite seu email</label>
+                <label for="email">Email</label>
                 <input type="email" id="email"   placeholder="Usuário@email.com">
 
                 <label for="usuario">Nome de Usuário</label>
                 <input type="text" id="usuario">
                 
-                <label for="senha">senha</label>
+                <label for="data">Data de nascimento</label>
+                <input type="date" id="data">
+
+                <label for="senha">Senha</label>
                 <input type="password" id="senha">
 
                 <label for="confirmarsenha">Confirme a Senha</label>
@@ -49,32 +52,34 @@
                 <input type="submit"  value="ENVIAR" class="enviar">
             </div>
         </form>
-        <fieldset">
+        <section">
         <div class="plataforma">
-            <ul>
-                <input type="checkbox" time="time" id="pc">    
-                <label for="pc">
-                    <li id="pc">      
-                            <h2>Computador</h2>
-                            <img src="./assets/img/pc.png" class="plataformaImg"></label>
-                    </li>
-                </label>        
-                <input type="checkbox"  name="time" id="controle">   
-                <label for="controle">             
-                <li id="mobile">     
-                    <h2 >Mobile</h2>
-                    <img src="./assets/img/phone.png" class="plataformaImg">
-                </li>
-                </label>
-                <input type="checkbox" name="time" id="console">     
-                <label for="console">            
-                    <li id="console">
-                        <h2>Console</h2>
-                        <img src="./assets/img/controle.png" class="plataformaImg">
-                    </li>
-                </label>
-            </ul>
-</fieldset>
+                <h1 class="subititulo">Plataforma</h1>
+                <ul>
+                    <input type="checkbox" time="time" id="pc">    
+                        <label for="pc">
+                            <li id="pc">      
+                                    <h2 class="listaTitulo">Pc</h2>
+                                    <img src="./assets/img/pc.png" class="plataformaImg"></label>
+                            </li>
+                        </label>        
+                        <input type="checkbox"  name="time" id="controle">   
+                        <label for="controle">             
+                            <li id="mobile">     
+                                <h2 >Mobile</h2>
+                                <img src="./assets/img/phone.png" class="plataformaImg">
+                            </li>
+                        </label>
+                        <input type="checkbox" name="time" id="console">     
+                        <label for="console">            
+                            <li id="console">
+                                <h2>Console</h2>
+                                <img src="./assets/img/controle.png" class="plataformaImg">
+                            </li>
+                        </label>
+                </ul>
+            </div>
+        </section>
 
     </main>
 </body>
