@@ -6,8 +6,9 @@ html {
 }
 
 body {
-    background-image: linear-gradient(to top, #0043ff, #623dff, #8e33ff, #b224ff, #d200ff);
+    background-image: linear-gradient(to right top, #2d4286, #263578, #1f286a, #181b5c, #110e4e);
     background-size: cover;
+    background-repeat: 0;
 }
 
 .subititulo {   
@@ -16,7 +17,7 @@ body {
     font-size: 4rem;
     position: absolute;
     top: 10%;
-    left: 65%;
+    left: 50%;
     transform: translate(-50%, -50%);
     text-transform: uppercase;
     font-weight: bold;
@@ -24,8 +25,6 @@ body {
 }
 
 .plataforma {
-    max-width: 880px;
-    width: 90%;
     position: absolute;
     top: 50%;
     left: 65%;
@@ -34,11 +33,9 @@ body {
 }
 
 .login {
-    max-width: 880px;
-    width: 90%;
     position: absolute;
     top: 60%;
-    left: 40%;
+    left: 20%;
     transform: translate(-50%, -50%);
 }
 

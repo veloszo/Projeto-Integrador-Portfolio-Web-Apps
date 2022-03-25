@@ -5,12 +5,19 @@
 
 }
 
-
-
 @media screen and (min-width: 992px) {
+    
+    .plataforma, .login {
+        width: auto;
+    }
+
+    .plataforma{
+        margin: 0rem 4rem 0rem 0rem;
+    }
 
 }
 
 @media screen and (min-width: 1200px) {
+
 
 }
