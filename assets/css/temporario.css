@@ -1,37 +1,33 @@
 html {
+    font-family: 'Press Start 2P', cursive;
     font-size: 62.5%;
-    
+    width: 100%;
+    height: 100%;
 }
 
 body {
-    background: #000000a9;
+    background-image: linear-gradient(to top, #0043ff, #623dff, #8e33ff, #b224ff, #d200ff);
+    background-size: cover;
 }
 
-.titulo {
-    color: #ECC84E;
-    font-size: 8em;
+.subititulo {   
+    text-align: center;
+    color:  #ffbb00;
+    font-size: 4rem;
     position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.subititulo {    
-    color: #ECC84E;
-    font-size: 5rem;
-    position: absolute;
-    top: 0%;
-    left: 50%;
+    top: 10%;
+    left: 65%;
     transform: translate(-50%, -50%);
     text-transform: uppercase;
     font-weight: bold;
+
 }
 
 .plataforma {
-    width: 100%;
     max-width: 880px;
+    width: 90%;
     position: absolute;
-    top: 55%;
+    top: 50%;
     left: 65%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -40,107 +36,76 @@ body {
 .login {
     max-width: 880px;
     width: 90%;
-    color: #ffffff;
     position: absolute;
     top: 60%;
     left: 40%;
     transform: translate(-50%, -50%);
 }
 
-form label  {
-    display: inline-flex;
-    color: #ECC84E;
-	font-size: 2.5rem;
-	margin: 0rem 1rem 0.5rem 0rem;
+ .formCadastro form label  {
+
+    color: #ffbb00;;
+	font-size: 2.2rem;
+	margin: 0rem 1rem 1rem 0rem;
     text-align: left;
     font-weight: bold;
 }
 
-form input {
+.formCadastro form input {
+    border: 0.3rem solid #ffbb00;
     display: flex;
-	padding: 0.5rem 6rem 0.5rem;
-	margin: 0rem 0rem  1.0rem;
-    font-size: 2.5rem;
+	padding: 1.2rem 1.2rem 1.2rem;
+	margin: 1rem 1rem 2.5rem 0rem;
+    font-size: 2rem;
 }
 
-.enviar {
-    background: linear-gradient(45deg, #ECC84E, #45C595);
+.formCadastro .enviar {
+    font-size: 2rem;
+    background: linear-gradient(to top, #ffbb00, #ffb183, #ffc4d8, #ffe5ff, #ffffff);
     font-weight: bolder;
     text-transform: uppercase;
     display: flex;
-    margin: 3rem 0rem 0rem 16rem ;
+    margin: 3rem 0rem 0rem 11rem ;
     padding: 1rem 2rem;
     Transition: 1s all;
 }
 
-ul{
+.formCadastro ul{
     display: inline-flex;
-    padding: 2.2rem;
+    padding-top: 8rem;
 }
 
-li {
-    color: #ECC84E;
+
+.formCadastro li {
+    font-size: 2rem;
+    text-align: center;
+    display: inline-block;
+    width: 30rem;
+    color: #ffbb00;
     border: 3px solid transparent;
-    border-image: linear-gradient(45deg, #ECC84E, #45C595);
+    border-image: linear-gradient(to top, #ffbb00, #ffb183, #ffc4d8, #ffe5ff, #ffffff);
     border-image-slice: 1;
-    padding: 3.8rem;
-    margin: 2rem;
-    font-weight: bold;
+    padding: 4rem 2rem 4rem 2rem;
+    margin: 2.5rem;
     font-weight: bold;
     text-transform: uppercase;
     Transition: 1s all;
 }
 
-li:hover {
-     color: #45C595;
-     border: 3px solid #45C595;
+.formCadastro li:hover {
+     color: #ffbb00;
+     border: 3px solid #ffbb00;
      Transform: scale(1.1); 
      Cursor: pointer;
 }
 
-.enviar:hover {
-    background: #45C595;
+.formCadastro .enviar:hover {
+    background: #ffbb00;
     Transform: scale(1.1); 
     Cursor: pointer;
 }
 
-form label:hover{
+.formCadastro label:hover{
     color: #ECC84E
 }
 
-@media screen and (max-width: 1111px) {
-        .plataforma, .login{
-            width: 80%;
-    }
-
-    .titulo, .subititulo {
-        margin: auto;;
-        font-size: 4rem;
-        padding: 4rem 0rem 0rem 0rem;
-    }
-
-    form input, form label {
-        font-size: 2rem;
-    }
-
-    sectiom {
-        display: inline-block;
-    }
-
-     .enviar, .login{
-        margin: auto;
-        position: absolute;
-    }
-
-    .plataforma {
-		width: 100%;
-		margin: auto;
-        position: absolute;
-        top: 110%;
-        left: 50%;
-    }
-
-    ul {
-        margin: 2rem 0 0 0 ;
-    }
-}
