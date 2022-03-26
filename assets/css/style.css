@@ -26,7 +26,7 @@
     color: rgb(240, 255, 255);
     margin: 0 1.5rem; 
     text-transform: uppercase;
-    font-size: 9px;
+    font-size: .8rem;
     font-weight: bold;
 }
 
@@ -58,8 +58,8 @@
     text-decoration: none;
     margin: 0 1rem; 
     text-transform: uppercase;
-    font-size: 1rem;
-    font-weight: bold;
+    font-size: 1.2rem;
+    font-weight: 300;
     color: rgb(240, 255, 255);
 }
 
@@ -89,6 +89,7 @@
 
 .cabecalho_navegacao__cadastrar a{
     font-family: 'Raleway', sans-serif;
+    margin-left: 9rem;
 }
 
 .cabecalho_navegacao__cadastrar a{
