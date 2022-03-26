@@ -1,44 +1,101 @@
-@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway2:wght@500&display=swap');
 
-
-.cabecalho{
-    background-image: linear-gradient(to right top, #2d4286, #263578, #1f286a, #181b5c, #110e4e);
-    width: 100%;
+.cabecalho_sociais{
     display: flex;
     justify-content: space-between;
+    background-color: #2A2A2A;
+    position: relative;
+    align-items: center;
 }
-.navegacao li{
+
+.cabecalho_sociais  ul li{
     display: inline-block;
-    line-height:  7rem;
-    padding: 0 1rem;
-}
-
-.navegacao a{
-    color: white;
+    color: rgba(240, 255, 255, 0.822);
     text-decoration: none;
-    font-family: 'Varela Round', sans-serif;
+    font-family: 'Raleway', sans-serif;
+}
+
+.cabecalho_sociais a{
+    text-decoration: none;
+    color: rgb(240, 255, 255);
+    margin: 0 1.5rem; 
     text-transform: uppercase;
+    font-size: 9px;
+    font-weight: bold;
 }
 
-.cabecalho-separacao{
-    padding: 0 1rem;
+.cabecalho_sociais img{
+    width: 1.2rem;
+    padding-top: .20rem;
 }
 
-.cabecalho-cadastrar{
-    padding-left: 2rem;
+.instagram {
+    padding-left: .5rem;
 }
-.sociais{
-    padding: 0 .5rem;
-}
-
-.logo img{
-    padding: .4rem 0;
+.cabecalho_sociais__nav___cadastrar a{
+    color: #7966FF;
 }
 
-.botao button{
-    border-radius: 10px;
-    border: none;
-    width: 7rem;
-    height: 2rem;
-    font-family: 'Varela Round', sans-serif;
+.cabecalho_navegacao{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #121212;
 }
+
+.cabecalho_navegacao ul li{
+    display: inline-block;
+    font-family: 'Raleway', sans-serif;
+}
+
+.cabecalho_navegacao a{
+    text-decoration: none;
+    margin: 0 1rem; 
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgb(240, 255, 255);
+}
+
+.cabecalho_navegacao a:hover{
+    color: #6F5EF8;
+}
+.cabecalho_navegacao img{
+    width: 8rem;
+}
+
+.cabecalho_navegacao__logo{
+    display: flex;
+    align-items: center;
+}
+
+.cabecalho_navegacao__logo h3{
+    font-weight: 550;
+    text-transform: uppercase;
+    font-family: 'Raleway2', sans-serif;
+    font-size: 2rem;
+    background-image: linear-gradient(to right top, #4f36ff, #6851ff, #7e6aff, #9181fd, #a497fa);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 2.2;
+}
+
+.cabecalho_navegacao__cadastrar a{
+    font-family: 'Raleway', sans-serif;
+}
+
+.cabecalho_navegacao__cadastrar a{
+    padding-right: .80rem;
+}
+
+
+.cabecalho_navegacao__cadastrar li a{
+    font-size: 8px;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+
