@@ -1,18 +1,17 @@
-html {
+main {
     font-family: 'Press Start 2P', cursive;
-    width: 100%;
+
 }
 
 
 
 body {
     height: auto;
-    background: linear-gradient(to right top, #2d4286, #263578, #1f286a, #181b5c, #110e4e);
+    background: rgb(110, 110, 110);
 }
 
 .subititulo {   
     text-align: center;
-    color:  #ffbb00;
     font-size: 1rem;
     text-transform: uppercase;
     font-weight: bold;
@@ -41,7 +40,6 @@ body {
 
 
 .formCadastro label  {
-    color: #ffbb00;;
 	font-size: 1.2rem;
 	margin: 0rem 1rem 1rem 0rem;
     text-align: left;
@@ -49,19 +47,26 @@ body {
 }
 
 .formCadastro input {
-    border: 0.3rem solid #ffbb00;
+    background: transparent;
+    border: 2px solid #ffffff;
+    border-radius: .3rem;
     display: flex;
 	padding: .5rem;
 	margin: .7rem 0 .7rem 0;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    color:#ffffff;
+
 }
 
-    #enviar {
+
+#enviar {
+    display: flex;
     font-size: 1.2rem;
-    background: linear-gradient(to top, #ffbb00, #ffb183, #ffc4d8, #ffe5ff, #ffffff);
-    font-weight: bolder;
+    background:#2a2a2a;
     text-transform: uppercase;
     Transition: 1s all;
+    border-radius: .5rem;
+    color: white;
 }
 
 .formCadastro ul{
@@ -72,7 +77,7 @@ body {
 }
 
 .plataformaImg {
-    width: 25%;
+    width: 30%;
 }
 
 
@@ -81,10 +86,8 @@ body {
     text-align: center;
     display: inline-block;
     width: 10rem;
-    color: #ffbb00;
-    border: 3px solid transparent;
-    border-image: linear-gradient(to top, #ffbb00, #ffb183, #ffc4d8, #ffe5ff, #ffffff);
-    border-image-slice: 1;
+    border: 2px solid #ffffff;
+    border-radius: .3rem;
     padding: 1rem .2rem 1rem .2rem;
     font-weight: bold;
     text-transform: uppercase;
@@ -106,19 +109,32 @@ body {
 
 
 .formCadastro li:hover {
-     color: #ffbb00;
-     border: 3px solid #ffbb00;
+     border: 3px solid black;
      Transform: scale(1.1); 
      Cursor: pointer;
+     
 }
 
-.formCadastro .enviar:hover {
-    background: #ffbb00;
+.formCadastro #enviar:hover {
     Transform: scale(1.1); 
     Cursor: pointer;
 }
 
-.formCadastro label:hover{
-    color: #ECC84E
+
+.formCadastro__geral{
+    background: #2A2A2A;
+    display:flex;
+    border: .3rem solid #2A2A2A;
+    border-radius: .5rem;
+    box-shadow: .2rem .2rem #000000;
+    padding: 1.5rem;
 }
 
+.formCadastro label , .subititulo , .listaTitulo {
+
+    color:#ffffff;
+    background-image: linear-gradient(to right top, #4f36ff, #6851ff, #7e6aff, #9181fd, #a497fa);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
