@@ -1,19 +1,19 @@
 html {
     font-family: 'Press Start 2P', cursive;
     width: 100%;
-    height: 100%;
 }
 
+
+
 body {
-    background-image: linear-gradient(to right top, #2d4286, #263578, #1f286a, #181b5c, #110e4e);
-    background-size: cover;
-    background-repeat: 0;
+    height: auto;
+    background: linear-gradient(to right top, #2d4286, #263578, #1f286a, #181b5c, #110e4e);
 }
 
 .subititulo {   
     text-align: center;
     color:  #ffbb00;
-    font-size: 1.5rem;
+    font-size: 1rem;
     text-transform: uppercase;
     font-weight: bold;
 }
@@ -23,7 +23,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20rem ;
+    margin-bottom: 1rem ;
 }
 
 .plataformaForm{
@@ -32,30 +32,32 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    margin: 2rem auto;
 }
 
 .login{
-    margin-right: 10rem;
+    margin-right: 7rem;
 }
 
- .formCadastro form label  {
+
+.formCadastro label  {
     color: #ffbb00;;
-	font-size: 2.2rem;
+	font-size: 1.2rem;
 	margin: 0rem 1rem 1rem 0rem;
     text-align: left;
     font-weight: bold;
 }
 
-.formCadastro form input {
+.formCadastro input {
     border: 0.3rem solid #ffbb00;
     display: flex;
-	padding: 1rem;
-	margin: 1rem 1rem 2.5rem 0rem;
-    font-size: 2rem;
+	padding: .5rem;
+	margin: .7rem 0 .7rem 0;
+    font-size: 1.2rem;
 }
 
     #enviar {
-    font-size: 2rem;
+    font-size: 1.2rem;
     background: linear-gradient(to top, #ffbb00, #ffb183, #ffc4d8, #ffe5ff, #ffffff);
     font-weight: bolder;
     text-transform: uppercase;
@@ -63,8 +65,10 @@ body {
 }
 
 .formCadastro ul{
-    display: inline-block;
-    padding-top: 2.5rem;
+    display: inline;
+    padding-top: 1rem;
+    align-items: center;
+    margin-left: 1rem;
 }
 
 .plataformaImg {
@@ -76,26 +80,28 @@ body {
     font-size: 1rem;
     text-align: center;
     display: inline-block;
-    width: 20rem;
+    width: 10rem;
     color: #ffbb00;
     border: 3px solid transparent;
     border-image: linear-gradient(to top, #ffbb00, #ffb183, #ffc4d8, #ffe5ff, #ffffff);
     border-image-slice: 1;
     padding: 1rem .2rem 1rem .2rem;
-    margin: 0 1rem 1rem 0rem;
     font-weight: bold;
     text-transform: uppercase;
     Transition: 1s all;
 }
 
 #pc, #console, #mobile {
-    margin-left: 9.5rem;
+    margin-left: 4.7rem;
 }
 
 .sec {
     justify-content: center;
-    margin-top: 11.5rem;
-    display: inline-block;
+
+}
+
+.listaTitulo {
+    font-size: .9rem;
 }
 
 
