@@ -161,6 +161,10 @@ i {
 .principal__jogos div {
     flex: 1 1 20rem;
     margin: 1rem;
+    box-shadow: .4rem .4rem 1rem #000000;
+    border-radius: .6rem .6rem 0 0;
+
+
 }
 
 .principal__jogos h3 {
