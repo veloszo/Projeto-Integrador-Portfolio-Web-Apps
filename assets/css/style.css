@@ -1,121 +1,208 @@
-/* Cores 
---1 #06BFBF (azul calro)
---2 #07F2B0 (verde agua)
-*/
-
+/* Configs Gerais */
 
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway2:wght@500&display=swap');
 
-@keyframes bouce {
-    0%, 20%, 60%, 100%{
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-    }
-    
-    40% {
-        -webkit-transform: translateY(-20px);
-        transform: translateY(-20px);
+/*-----------------*/
 
-    }
-    80% {
-        -webkit-transform: translateY(-10px);
-        transform: translateY(-10px);
-
-    }
-
+/* Configs Cabecalho */
+.cabecalho_sociais{
+    display: flex;
+    justify-content: space-between;
+    background-color: #2A2A2A;
+    position: relative;
+    align-items: center;
 }
 
-.app {
-    background: #f1f1f1;
-    display: grid;  
-    font-family: Arial, Helvetica, sans-serif;
-    grid-template-areas:
-        "cabecalho"
-        "conteudo"
-        "rodape" ;
-    grid-template-columns: auto;
-    grid-template-rows: 50px 100vh auto;
+.cabecalho_sociais  ul li{
+    display: inline-block;
+    color: rgba(240, 255, 255, 0.822);
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
 }
 
-.cabecalho {
-    background: #00cc99;
-    grid-area: cabecalho;
-}
- 
-.conteudo {
-    background: #ff8080;  
-    grid-area: conteudo;
-}
-
-.rodape {
-    background: #0099ff;
-    grid-area: rodape;
+.cabecalho_sociais a{
+    text-decoration: none;
+    color: rgb(240, 255, 255);
+    margin: 0 1.5rem; 
+    text-transform: uppercase;
+    font-size: .8rem;
+    font-weight: bold;
 }
 
+.cabecalho_sociais img{
+    width: 1.2rem;
+    padding-top: .20rem;
+}
 
-.container{
-    max-width: 1080px;
-    margin: 0 auto;
+.instagram {
+    padding-left: .5rem;
+}
+.cabecalho_sociais__nav___cadastrar a{
+    color: #7966FF;
+}
+
+.cabecalho_navegacao{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #121212;
+}
+
+.cabecalho_navegacao ul li{
+    display: inline-block;
+    font-family: 'Raleway', sans-serif;
+}
+
+.cabecalho_navegacao a{
+    text-decoration: none;
+    margin: 0 1rem; 
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: rgb(240, 255, 255);
+}
+
+.cabecalho_navegacao a:hover{
+    color: #6F5EF8;
+}
+.cabecalho_navegacao img{
+    width: 8rem;
+}
+
+.cabecalho_navegacao__logo{
     display: flex;
     align-items: center;
+}
+
+.cabecalho_navegacao__logo h3{
+    font-weight: 550;
+    text-transform: uppercase;
+    font-family: 'Raleway2', sans-serif;
+    font-size: 2rem;
+    background-image: linear-gradient(to right top, #4f36ff, #6851ff, #7e6aff, #9181fd, #a497fa);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 2.2;
+}
+
+.cabecalho_navegacao__cadastrar a{
+    font-family: 'Raleway', sans-serif;
+    margin-left: 9rem;
+}
+
+.cabecalho_navegacao__cadastrar a{
+    padding-right: .80rem;
+}
+
+
+.cabecalho_navegacao__cadastrar li a{
+    font-size: 8px;
+    text-decoration: none;
+    list-style: none;
+}
+/*------------------------*/
+
+.principal {
+    height: auto;
+    background: linear-gradient(to right top, #2d4286, #263578, #1f286a, #181b5c, #110e4e);
+    font-family: 'Press Start 2P', cursive;
+}
+
+/* Listas start*/
+.principal__categorias___lista {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.principal__categorias___item {
+    height: auto;
+    text-transform: uppercase;
+    padding-left: 1rem;
+    padding: 1rem;
+
+}
+
+.destaques__categorias___link {
+    display: flex;
+    background-color: #72146d;
+    color: rgb(0, 0, 0);
+    border: solid 3px #2e0563;
+    border-radius: 10px;
+    padding: .6rem;
+    font-size: 1rem;
+
+}
+
+i {
+    padding-right: .3rem;
+}
+/* Listas end*/
+
+/* Listas Jogos Start Lançamentos*/
+
+.principal__jogos {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 70rem;
+    margin: 0 auto;
+
+}
+
+.principal__jogos img {
+    width: 100%;
+    display: block;
+    border-radius: .6rem .6rem 0 0;
+
+}
+
+.principal__jogos div {
+    flex: 1 1 20rem;
+    margin: 1rem;
+}
+
+.principal__jogos h3 {
+    display: flex;
+    justify-content:center;
+    padding: .3rem;
+    background-color: #1f5f9b;
+    font-size: .95rem;
+    border-radius: 0 0 .1rem .1rem;
+    color: aqua;
+}
+
+.destaques__jogos___anchor {
+    color:inherit;
+}
+
+/* Listas Jogos end Lançamentos*/
+
+/* config dos botoes de avançar e retornar */
+
+.botoes {
+    display: flex;
+    justify-content:space-between;
+    margin:0 30%;
+    padding-bottom: 1rem;
+    font-size: .7rem;
+}
+
+
+.rodape {
+    display:flex;
+    background: rgb(27, 121, 150);
+    align-items: center;
+    text-align: center;
     justify-content: center;
 }
 
-header{
-    background-color: black;
-    width: 100%;
-    padding: 10px;
+#logoRodape {
+    margin-top: 1rem;
+    color: black;
 }
 
-.logo{
-    width: 25%;
-    cursor: pointer;
-}
-
-.sociais{
-    width: 25%;
-}
-
-.sociais__logo1, .sociais__logo2, .sociais__logo3{
-    width: 35px;
-    height: 35px;
-    border-radius: 5px;
-    background-image: linear-gradient(to right top, #005c53, #007059, #1e8558, #409852, #66ab47, #7cb741, #94c239, #adcd30, #b8d62e, #c3e02d, #cfe92a, #dbf227);
-    border: none;
-    margin-right: 5px;
-}
-.sociais__logo1, .sociais__logo2, .sociais__logo3 , i{
-    font-size: 23px;
-}
-
-.menu{
-    width: 80%;
-    font-family: 'Fredoka', sans-serif;
-}
-
-.menu nav a{
-    color: white;
-    text-decoration: none;
-    padding-right: 50px;
-    font-size: 20px;
-}
-
-input{
-    border-radius: 5px;
-    border: none;
-    padding: 5px 10px;
-    margin: auto;
-
-}
-
-.sociais__logo1:hover{
-    animation: bouce 1s;
-}
-
-.sociais__logo2:hover{
-    animation: bouce 1s;
-}
-
-.sociais__logo3:hover{
-    animation: bouce 1s;
+.rodapeTexto {
+    margin-bottom: 2rem;
 }

@@ -1,6 +1,5 @@
 html {
     font-family: 'Press Start 2P', cursive;
-    font-size: 62.5%;
     width: 100%;
     height: 100%;
 }
@@ -14,7 +13,7 @@ body {
 .subititulo {   
     text-align: center;
     color:  #ffbb00;
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-transform: uppercase;
     font-weight: bold;
 }
