@@ -14,33 +14,32 @@ body {
 .subititulo {   
     text-align: center;
     color:  #ffbb00;
-    font-size: 4rem;
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    font-size: 2rem;
     text-transform: uppercase;
     font-weight: bold;
-
 }
 
 .plataforma {
-    position: absolute;
-    top: 50%;
-    left: 65%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20rem ;
 }
 
-.login {
-    position: absolute;
-    top: 60%;
-    left: 20%;
-    transform: translate(-50%, -50%);
+.plataformaForm{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.login{
+    margin-right: 10rem;
 }
 
  .formCadastro form label  {
-
     color: #ffbb00;;
 	font-size: 2.2rem;
 	margin: 0rem 1rem 1rem 0rem;
@@ -51,43 +50,55 @@ body {
 .formCadastro form input {
     border: 0.3rem solid #ffbb00;
     display: flex;
-	padding: 1.2rem 1.2rem 1.2rem;
+	padding: 1rem;
 	margin: 1rem 1rem 2.5rem 0rem;
     font-size: 2rem;
 }
 
-.formCadastro .enviar {
+    #enviar {
     font-size: 2rem;
     background: linear-gradient(to top, #ffbb00, #ffb183, #ffc4d8, #ffe5ff, #ffffff);
     font-weight: bolder;
     text-transform: uppercase;
-    display: flex;
-    margin: 3rem 0rem 0rem 11rem ;
-    padding: 1rem 2rem;
     Transition: 1s all;
 }
 
 .formCadastro ul{
-    display: inline-flex;
-    padding-top: 8rem;
+    display: inline-block;
+    padding-top: 2.5rem;
+}
+
+.plataformaImg {
+    width: 25%;
 }
 
 
 .formCadastro li {
-    font-size: 2rem;
+    font-size: 1rem;
     text-align: center;
     display: inline-block;
-    width: 30rem;
+    width: 20rem;
     color: #ffbb00;
     border: 3px solid transparent;
     border-image: linear-gradient(to top, #ffbb00, #ffb183, #ffc4d8, #ffe5ff, #ffffff);
     border-image-slice: 1;
-    padding: 4rem 2rem 4rem 2rem;
-    margin: 2.5rem;
+    padding: 1rem .2rem 1rem .2rem;
+    margin: 0 1rem 1rem 0rem;
     font-weight: bold;
     text-transform: uppercase;
     Transition: 1s all;
 }
+
+#pc, #console, #mobile {
+    margin-left: 9.5rem;
+}
+
+.sec {
+    justify-content: center;
+    margin-top: 11.5rem;
+    display: inline-block;
+}
+
 
 .formCadastro li:hover {
      color: #ffbb00;

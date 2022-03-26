@@ -35,14 +35,15 @@
             </div>
     </header>
     <main class="formCadastro">>
-            <form>
+            <form class="plataformaForm">
                 <div class="login">
-                    <label for="email">Email</label>
-                    <input type="email" id="email"   placeholder="Usuário@email.com">
 
                     <label for="usuario">Nome de Usuário</label>
                     <input type="text" id="usuario">
-                    
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email"   placeholder="Usuário@email.com">
+
                     <label for="data">Data de nascimento</label>
                     <input type="date" id="data">
 
@@ -52,38 +53,38 @@
                     <label for="confirmarsenha">Confirme a Senha</label>
                     <input type="password" id="confirmarsenha">
 
-                    <input type="submit"  value="cadastrar" class="enviar">
+                    <input type="submit" value="CADASTRAR" id="enviar">
+                    
                 </div>
-                <section">
-                        <div class="plataforma">
-                            <ul>
-                                <h1 class="subititulo">Plataforma</h1>
-                                <input type="checkbox" time="time" id="pc">    
-                                    <label for="pc">
-                                        <li>      
-                                                <h2 class="listaTitulo">pc</h2>
-                                                <img src="./assets/img/pc.png" class="plataformaImg"></label>
-                                        </li>
-                                    </label>        
-                                    <input type="checkbox"  name="time" id="controle">   
-                                    <label for="controle">             
-                                        <li>     
-                                            <h2 class="listaTitulo" >Mobile</h2>
-                                            <img src="./assets/img/phone.png" class="plataformaImg">
-                                        </li>
-                                    </label>
-                                    <input type="checkbox" name="time" id="console">     
-                                    <label for="console">            
-                                        <li>
-                                            <h2 class="listaTitulo">Console</h2>
-                                            <img src="./assets/img/controle.png" class="plataformaImg">
-                                        </li>
-                                    </label>
-                            </ul>
-                        </div>
-                    </section>
+                <section class="sec">
+                    <h1 class="subititulo">Plataforma</h1>
+                    <div class="plataforma">
+                        <ul>
+                            <input type="checkbox" time="time" id="pc">    
+                                <label for="pc">
+                                    <li>      
+                                            <h2 class="listaTitulo">pc</h2>
+                                            <img src="./assets/img/pc.png" class="plataformaImg"></label>
+                                    </li>
+                                </label>        
+                                <input type="checkbox"  name="time"id="mobile">   
+                                <label for="mobile">             
+                                    <li>     
+                                        <h2 class="listaTitulo" >Mobile</h2>
+                                        <img src="./assets/img/phone.png" class="plataformaImg">
+                                    </li>
+                                </label>
+                                <input type="checkbox" name="time" id="console">     
+                                <label for="console">            
+                                    <li>
+                                        <h2 class="listaTitulo">Console</h2>
+                                        <img src="./assets/img/controle.png" class="plataformaImg">
+                                    </li>
+                                </label>
+                        </ul>
+                    </div>
+                </section>
             </form>
- 
     </main>
 </body>
 </html>
