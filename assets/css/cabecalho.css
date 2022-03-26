@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+
+.cabecalho{
+    background-image: linear-gradient(to right top, #2d4286, #263578, #1f286a, #181b5c, #110e4e);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.navegacao li{
+    display: inline-block;
+    line-height:  7rem;
+    padding: 0 1rem;
+}
+
+.navegacao a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Varela Round', sans-serif;
+    text-transform: uppercase;
+}
+
+.cabecalho-separacao{
+    padding: 0 1rem;
+}
+
+.cabecalho-cadastrar{
+    padding-left: 2rem;
+}
+.sociais{
+    padding: 0 .5rem;
+}
+
+.logo img{
+    padding: .4rem 0;
+}
+
+.botao button{
+    border-radius: 10px;
+    border: none;
+    width: 7rem;
+    height: 2rem;
+    font-family: 'Varela Round', sans-serif;
+}
