@@ -1,0 +1,180 @@
+main {
+    font-family: 'Press Start 2P', cursive;
+
+}
+
+body {
+    height: auto;
+    background: #121212;
+}
+
+.logoCadastro {
+    width: 100%;
+    margin-bottom: 2rem;
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5rem;
+    color:white;
+}
+
+.plataformaForm{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 10rem auto;
+}
+
+.formCadastro__geral{
+    display:inline-block;
+    background: #2A2A2A;
+    border: .3rem solid #2A2A2A;
+    border-radius: .5rem;
+    padding: 1.5rem;
+}
+
+.formCadrastro__label , .plataforma__label{
+	font-size: 1.2rem;
+	margin: 0rem 1rem 1rem 0rem;
+    font-weight: bold;
+}
+
+.formCadrastro__input ,.plataforma__input {
+    background: transparent;
+    border: 2px solid #ffffff;
+    border-radius: .3rem;
+    display: flex;
+	padding: .7rem .6rem;
+	margin: .7rem 0 .7rem 0;
+    font-size: 1.1rem;
+    color:#ffffff;
+
+}
+
+.plataforma__ul{
+    display: flex;
+    padding-top: 1rem;
+    align-items: center;
+ 
+}
+
+.plataforma__li {
+    font-size: 1rem;
+    text-align: center;
+    width: 6.8rem;
+    border: 2px solid #ffffff;
+    border-radius: .3rem;
+    padding: .7rem .2rem .7rem .2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    Transition: 1s all;
+}
+
+.plataforma__li:hover {
+    border: 3px solid black;
+    Transform: scale(1.1); 
+    Cursor: pointer;
+    
+}
+
+.formCadastro #enviar:hover {
+   Transform: scale(1.1); 
+   Cursor: pointer;
+}
+
+
+.formCadastro__geral{
+   display:inline-block;
+   background: #2A2A2A;
+   border: .3rem solid #2A2A2A;
+   border-radius: .5rem;
+   padding: 0 1.5rem 1.5rem 1.5rem;
+}
+
+.formCadrastro__label , .plataforma__label , .listaTitulo {
+    color:#ffffff;
+    background-image: linear-gradient(to right top, #4f36ff, #6851ff, #7e6aff, #9181fd, #a497fa);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.login {
+    margin-left: 1rem;
+}
+
+.plataforma {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem ;
+}
+
+.plataformaImg {
+    width: 30%;
+}
+
+.listaTitulo {
+    font-size: .9rem;
+}
+
+#pc, #console, #mobile {
+    margin-right: 4.5px;
+   
+}
+
+
+.submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.checkboxSection{
+    display: inline-block;
+    font-family: 'Courier New', Courier, monospace;
+    color:white;
+    font-size: 1rem;
+}
+
+.checkboxSection__li {
+    margin: 1rem auto;
+}
+
+#checkbox1, #checkbox2 {
+    color:transparent;
+}
+
+
+#enviar {
+    display: flex;
+    font-size: 1rem;
+    padding: 1rem 7rem;
+    margin: 1rem auto;
+    background:#2a2a2a;
+    text-transform: uppercase;
+    Transition: 1s all;
+    border-radius: .5rem;
+    color: white;
+    background: rgb(46, 46, 224);
+
+}
+
+
+.descricaoCadastar__ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.descricaoCadastar__ul{
+    display: block;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.1rem;
+    color:white;
+}
