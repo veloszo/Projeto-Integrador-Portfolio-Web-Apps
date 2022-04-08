@@ -2,51 +2,29 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway2:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --corprincipal: #0B2B40;
+    --cor1: #13678A;
+    --cor2: #45C4B0;
+    --cor3:#9AEBA3;
+    --cor4: #DAFDBA;
+}
 /*-----------------*/
 
 /* Configs Cabecalho */
-.cabecalho_sociais{
-    display: flex;
-    justify-content: space-between;
-    background-color: #2A2A2A;
-    position: relative;
-    align-items: center;
-}
-
-.cabecalho_sociais  ul li{
-    display: inline-block;
-    color: rgba(240, 255, 255, 0.822);
-    text-decoration: none;
-    font-family: 'Raleway', sans-serif;
-}
-
-.cabecalho_sociais a{
-    text-decoration: none;
-    color: rgb(240, 255, 255);
-    margin: 0 1.5rem; 
-    text-transform: uppercase;
-    font-size: .8rem;
-    font-weight: bold;
-}
-
-.cabecalho_sociais img{
-    width: 1.2rem;
-    padding-top: .20rem;
-}
-
-.instagram {
-    padding-left: .5rem;
-}
-.cabecalho_sociais__nav___cadastrar a{
-    color: #7966FF;
-}
 
 .cabecalho_navegacao{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between;    
     align-items: center;
     background-color: #121212;
+    padding: 0 3rem;
 }
 
 .cabecalho_navegacao ul li{
@@ -56,10 +34,8 @@
 
 .cabecalho_navegacao a{
     text-decoration: none;
-    margin: 0 1rem; 
     text-transform: uppercase;
     font-size: 1.2rem;
-    font-weight: 300;
     color: rgb(240, 255, 255);
 }
 
@@ -67,79 +43,42 @@
     color: #6F5EF8;
 }
 .cabecalho_navegacao img{
-    width: 8rem;
+    width: 1.7rem;
 }
 
-.cabecalho_navegacao__logo{
-    display: flex;
-    align-items: center;
+.cabecalho_navegacao__logo img{
+    width: 100%;
 }
-
-.cabecalho_navegacao__logo h3{
-    font-weight: 550;
-    text-transform: uppercase;
-    font-family: 'Raleway2', sans-serif;
-    font-size: 2rem;
-    background-image: linear-gradient(to right top, #4f36ff, #6851ff, #7e6aff, #9181fd, #a497fa);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    line-height: 2.2;
-}
-
-.cabecalho_navegacao__cadastrar a{
-    font-family: 'Raleway', sans-serif;
-    margin-left: 9rem;
-}
-
-.cabecalho_navegacao__cadastrar a{
-    padding-right: .80rem;
-}
-
 
 .cabecalho_navegacao__cadastrar li a{
-    font-size: 8px;
-    text-decoration: none;
-    list-style: none;
+
+}
+
+.navegacao{
+    background-color: #302f2f;
+    color: inherit;
+    color:white;
+}
+
+.navegacao li{
+    border-bottom: 5px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 2px 10px;
+}
+
+.navegacao a{
+    color: inherit;
+    color:white;
+    font-size: 1.4rem;
 }
 /*------------------------*/
 
 .principal {
     height: auto;
-    background: linear-gradient(to right top, #2d4286, #263578, #1f286a, #181b5c, #110e4e);
-    font-family: 'Press Start 2P', cursive;
+    background: var(--cor4);
+    font-family: 'Poppins', sans-serif;
 }
 
-/* Listas start*/
-.principal__categorias___lista {
-    display: flex;
-    justify-content: center;
-    
-}
-
-.principal__categorias___item {
-    height: auto;
-    text-transform: uppercase;
-    padding-left: 1rem;
-    padding: 1rem;
-
-}
-
-.destaques__categorias___link {
-    display: flex;
-    background-color: #72146d;
-    color: rgb(0, 0, 0);
-    border: solid 3px #2e0563;
-    border-radius: 10px;
-    padding: .6rem;
-    font-size: 1rem;
-
-}
-
-i {
-    padding-right: .3rem;
-}
-/* Listas end*/
 
 /* Listas Jogos Start Lançamentos*/
 
@@ -167,10 +106,10 @@ i {
     display: flex;
     justify-content:center;
     padding: .3rem;
-    background-color: #1f5f9b;
-    font-size: .95rem;
+    background-color: rgb(0, 0, 0);
+    font-size: 1.2rem;
     border-radius: 0 0 .1rem .1rem;
-    color: aqua;
+    color: rgb(255, 255, 255);
 }
 
 .destaques__jogos___anchor {
@@ -206,3 +145,19 @@ i {
 .rodapeTexto {
     margin-bottom: 2rem;
 }
+
+
+.navegacao{
+    display: flex;
+    justify-content: center;
+}
+
+.navegacao ul{
+    display: flex;
+}
+
+.navegacao li{
+    margin:20px 20px;
+}
+
+
