@@ -50,9 +50,6 @@ body {
     width: 100%;
 }
 
-.cabecalho_navegacao__cadastrar li a{
-
-}
 
 .navegacao{
     background-color: #302f2f;
@@ -75,7 +72,7 @@ body {
 
 .principal {
     height: auto;
-    background: var(--cor4);
+    background: #c5c5c5;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -131,10 +128,11 @@ body {
 
 .rodape {
     display:flex;
-    background: rgb(27, 121, 150);
+    background: rgb(20, 20, 20);
     align-items: center;
     text-align: center;
     justify-content: center;
+    color: white;
 }
 
 #logoRodape {
