@@ -1,6 +1,5 @@
 main {
     font-family: 'Press Start 2P', cursive;
-
 }
 
 body {
@@ -16,7 +15,8 @@ body {
     text-align: center;
     font-family: 'Raleway', sans-serif;
     font-size: 1.5rem;
-    color:white;
+    color:rgb(240, 255, 255);
+    opacity: 1;
 }
 
 .plataformaForm{
@@ -24,7 +24,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin: 10rem auto;
+    margin: 5rem auto;
 }
 
 .formCadastro__geral{
@@ -37,35 +37,34 @@ body {
 
 .formCadrastro__label , .plataforma__label{
 	font-size: 1.2rem;
-	margin: 0rem 1rem 1rem 0rem;
+	margin: 1rem 1rem 1rem 0rem;
     font-weight: bold;
 }
 
 .formCadrastro__input ,.plataforma__input {
     background: transparent;
-    border: 2px solid #ffffff;
+    border: 2px solid rgb(240, 255, 255);
     border-radius: .3rem;
     display: flex;
-	padding: .7rem .6rem;
-	margin: .7rem 0 .7rem 0;
+	padding: .7rem .5rem;
+	margin: 1rem 0 1rem 0;
     font-size: 1.1rem;
-    color:#ffffff;
-
+    color:rgb(240, 255, 255);
+    opacity: 0.7;
 }
 
 .plataforma__ul{
     display: flex;
-    padding-top: 1rem;
+    padding-top: 1.5rem;
     margin-left: .2rem;
     align-items: center;
- 
 }
 
 .plataforma__li {
     font-size: 1rem;
     text-align: center;
     width: 6.8rem;
-    border: 2px solid #ffffff;
+    border: 2px solid rgb(240, 255, 255);
     border-radius: .3rem;
     padding: .7rem .2rem .7rem .2rem;
     font-weight: bold;
@@ -74,10 +73,9 @@ body {
 }
 
 .plataforma__li:hover {
-    border: 3px solid black;
+    border: 3px solid  #a497fa;
     Transform: scale(1.1); 
     Cursor: pointer;
-    
 }
 
 .formCadastro #enviar:hover {
@@ -89,13 +87,15 @@ body {
 .formCadastro__geral{
    display:inline-block;
    background: #2A2A2A;
-   border: .3rem solid #2A2A2A;
+   border: .3rem solid rgb(240, 255, 255);
    border-radius: .5rem;
    padding: 0 1.5rem 1.5rem 1.5rem;
+   opacity: 0.8;
+   box-shadow: inset 0 0 1em  #9181fd, 0 0 1em;
 }
 
 .formCadrastro__label , .plataforma__label , .listaTitulo , .loginDoge {
-    color:#ffffff;
+    color: rgb(240, 255, 255);;
     background-image: linear-gradient(to right top, #4f36ff, #6851ff, #7e6aff, #9181fd, #a497fa);
     background-clip: text;
     -webkit-background-clip: text;
@@ -123,7 +123,6 @@ body {
 
 #pc, #console, #mobile {
     margin-right: 4.5px;
-   
 }
 
 
@@ -138,7 +137,7 @@ body {
     
     display: inline-block;
     font-family: 'Courier New', Courier, monospace;
-    color:white;
+    color:rgb(240, 255, 255);
     font-size: 1rem;
     margin-left: 0.4rem;
 }
@@ -147,23 +146,19 @@ body {
     margin: 1rem auto;
 }
 
-#checkbox1, #checkbox2 {
-    color:transparent;
-}
-
 
 #enviar {
     display: flex;
     font-size: 1rem;
     padding: 1rem 7rem;
     margin: 1rem auto;
-    background:#2a2a2a;
     text-transform: uppercase;
     Transition: 1s all;
-    border-radius: .5rem;
-    color: white;
-    background: rgb(46, 46, 224);
-
+    border-radius: 1rem;
+    color: rgb(240, 255, 255);
+    background-image: linear-gradient(to right top, #4f36ff, #6851ff, #7e6aff, #9181fd, #a497fa);
+    border: 1px solid transparent;
+    box-shadow: inset 0 0 0.5em  rgb(240, 255, 255), 0 0 0.5em;
 }
 
 
@@ -179,10 +174,32 @@ body {
     display: block;
     font-family: 'Courier New', Courier, monospace;
     font-size: 1.1rem;
-    color:white;
+    color: rgb(240, 255, 255);
 }
 
-.descricaoCadastar__a {
-    color:white;
-    text-decoration: none;
+@media screen and (max-width: 1040px) {
+
+    .formCadastro__geral{
+        width: 100%;
+    }
+
+    .formCadrastro__input{
+        width: 100%;
+    }
+
+    .plataforma__ul, .plataforma__input{
+        display: inline-block;
+        margin: 0%;
+        align-items: center;
+    }
+
+    .plataforma__li {
+       margin: 0%;
+    }
+
+    #pc, #console, #mobile {
+        display: flex;
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
 }
