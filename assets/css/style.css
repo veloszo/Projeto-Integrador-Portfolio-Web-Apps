@@ -72,7 +72,7 @@ body {
 
 .principal {
     height: auto;
-    background: #c5c5c5;
+    background-image: linear-gradient(to bottom, #302f2f, #525151, #767676, #9d9c9d, #c5c5c5);
     font-family: 'Poppins', sans-serif;
 }
 
@@ -127,21 +127,15 @@ body {
 
 
 .rodape {
-    display:flex;
     background: rgb(20, 20, 20);
     align-items: center;
     text-align: center;
-    justify-content: center;
     color: white;
 }
 
 #logoRodape {
     margin-top: 1rem;
     color: black;
-}
-
-.rodapeTexto {
-    margin-bottom: 2rem;
 }
 
 

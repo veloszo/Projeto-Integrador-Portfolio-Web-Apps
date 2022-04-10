@@ -146,22 +146,6 @@ body {
     margin: 1rem auto;
 }
 
-
-#enviar {
-    display: flex;
-    font-size: 1rem;
-    padding: 1rem 7rem;
-    margin: 1rem auto;
-    text-transform: uppercase;
-    Transition: 1s all;
-    border-radius: 1rem;
-    color: rgb(240, 255, 255);
-    background-image: linear-gradient(to right top, #4f36ff, #6851ff, #7e6aff, #9181fd, #a497fa);
-    border: 1px solid transparent;
-    box-shadow: inset 0 0 0.5em  rgb(240, 255, 255), 0 0 0.5em;
-}
-
-
 .descricaoCadastar__ul {
     display: flex;
     justify-content: center;
@@ -176,6 +160,63 @@ body {
     font-size: 1.1rem;
     color: rgb(240, 255, 255);
 }
+
+/* From uiverse.io by @Cevorob */
+
+#enviar {
+    --glow-color: #9181fd;
+    --glow-spread-color: #7e6aff;
+    --enhanced-glow-color: #a497fa;;
+    --btn-color: rgb(100, 61, 136);
+    border: .25em solid var(--glow-color);
+    padding: 1em 3em;
+    color: var(--glow-color);
+    font-size: 15px;
+    font-weight: bold;
+    background-color: var(--btn-color);
+    border-radius: 1em;
+    outline: none;
+    box-shadow: 0 0 1em .25em var(--glow-color),
+           0 0 4em 1em var(--glow-spread-color),
+           inset 0 0 .75em .25em var(--glow-color);
+    text-shadow: 0 0 .5em var(--glow-color);
+    position: relative;
+    transition: all 0.3s;
+   }
+   
+   #enviar::after {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--glow-spread-color);
+    filter: blur(2em);
+    opacity: .7;
+    transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+   }
+   
+   #enviar:hover {
+    color: var(--btn-color);
+    background-color: var(--glow-color);
+    box-shadow: 0 0 1em .25em var(--glow-color),
+           0 0 4em 2em var(--glow-spread-color),
+           inset 0 0 .75em .25em var(--glow-color);
+   }
+   
+   #enviar:active {
+    box-shadow: 0 0 0.6em .25em var(--glow-color),
+           0 0 2.5em 2em var(--glow-spread-color),
+           inset 0 0 .5em .25em var(--glow-color);
+   }
+
+
+
+
+
+
 
 @media screen and (max-width: 1040px) {
 
