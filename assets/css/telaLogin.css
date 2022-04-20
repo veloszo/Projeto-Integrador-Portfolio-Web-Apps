@@ -215,6 +215,20 @@ body {
 
 
 
+/* SUCESSO E ERROR */
+
+
+.login.error input {
+    border: .3rem solid #DB5A5a;
+    box-shadow: inset 0 0 1em  #DB5A5a, 0 0 1em;
+}
+
+.login.login.error i img-error {
+    visibility: visible;
+}
+
+
+
 
 
 
