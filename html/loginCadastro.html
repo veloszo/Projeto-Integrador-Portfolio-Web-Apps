@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Doge - Cadastro</title>
     <link href="../assets/css/normalize.css" rel="stylesheet">
+    <link href="../assets/css/reset.css" rel="stylesheet">
     <link href="../assets/css/telaLogin.css" rel="stylesheet">
     <link href="../assets/css/style.css" rel="stylesheet">
-    <link href="../assets/css/reset.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -18,64 +18,26 @@
             <form class="plataformaForm">
                
                 <div class="formCadastro__geral">
-
                     <div class="logoCadastro">
                         <a href="emDestaque.html"><img src="../assets/img/Design sem nome.svg"></a>
                         <h2>Cadastrar</h2>
                     </div>
-
-                    <div class="login error">
                         
                         <label class="formCadrastro__label" for="usuario">Nome</label>
-                        <i><img class="img-error" src="/assets/img/error-icon.svg"></i>
-                        <input class="formCadrastro__input" type="text" id="usuario">
+                        <input class="formCadrastro__input" type="email" id="usuario">
 
 
                         <label class="formCadrastro__label" for="email">Email</label>
-                        <i><img class="img-error" src="/assets/img/error-icon.svg"></i>
                         <input class="formCadrastro__input" type="email" id="email">
 
                         <label class="formCadrastro__label" for="data">Data de nascimento</label>
                         <input class="formCadrastro__input" type="date" id="data">
 
                         <label class="formCadrastro__label" for="senha">Senha</label>
-                        <i><img src="/assets/img/error-icon.svg"></i>
                         <input class="formCadrastro__input" type="password" id="senha">
 
                         <label class="formCadrastro__label" for="confirmarsenha">Confirme a Senha</label>
-                        <i><img class="img-error" src="/assets/img/error-icon.svg"></i>
                         <input class="formCadrastro__input" type="password" id="confirmarsenha">
-                            
-                    </div> 
-                    <section class="sec">
-                        <div class="plataforma">
-                            <ul class="plataforma__ul">
-                                <input class="plataforma__input" type="checkbox" time="time" id="pc">    
-                                    <label class="plataforma__label" for="pc">
-                                        <li class="plataforma__li">      
-                                            <h2 class="listaTitulo">pc</h2>
-                                            <img src="../assets/img/pc.png" class="plataformaImg"></label>
-                                        </li>
-                                    </label>
-
-                                    <input class="plataforma__input" type="checkbox"  name="time" id="mobile">   
-                                    <label class="plataforma__label" for="mobile">             
-                                        <li class="plataforma__li">     
-                                            <h2 class="listaTitulo" >Mobile</h2>
-                                            <img src="../assets/img/phone.png" class="plataformaImg">
-                                        </li>
-                                    </label>
-                                    
-                                    <input class="plataforma__input" type="checkbox" name="time" id="console">     
-                                    <label class="plataforma__label" for="console">            
-                                        <li class="plataforma__li">
-                                            <h2 class="listaTitulo">Console</h2>
-                                            <img src="../assets/img/controle.png" class="plataformaImg">
-                                        </li>
-                                    </label>
-                            </ul>
-                        </div>
-                    </section>
 
                     <section class="checkboxSection">
                         <ul>
@@ -83,17 +45,14 @@
                                 <input type="checkbox" name="tryyxLRxOipeMniEfSv" id="checkbox1">
                                 <label class="checkboxSection__label" for="checkbox1">Quero receber notícias e pesquisas e <br/n>ofertas especiais da Doge.</label>
                             </li>
-                            <li class="checkboxSection__li">
-                                <input type="checkbox" name="time" id="checkbox2">
-                                <label class="checkboxSection__label" for="checkbox2">Li e concordo com os <i><u><a>termos de serviço</a></u></i>.</label>
-                            </li>
-                        </ul>
+
                     </section>
 
                     <div class="submit">
                         <button id="enviar"> REGISTRAR
                         </button>
                     </div>
+                    <script src="/assets/js/script.js"></script>
 
                     <div class="descricaoCadastar">
                         <ul class="descricaoCadastar__ul">
