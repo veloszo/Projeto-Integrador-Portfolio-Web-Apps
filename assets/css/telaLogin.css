@@ -95,7 +95,7 @@ body {
 }
 
 .formCadrastro__label , .plataforma__label , .listaTitulo , .loginDoge {
-    color: rgb(240, 255, 255);;
+    color: rgb(240, 255, 255);
     background-image: linear-gradient(to right top, #4f36ff, #6851ff, #7e6aff, #9181fd, #a497fa);
     background-clip: text;
     -webkit-background-clip: text;
@@ -139,6 +139,10 @@ body {
 
 .checkboxSection__li {
     margin: 1rem auto;
+}
+
+.descricaoCadastar__a{
+    color: rgb(240, 255, 255);
 }
 
 .descricaoCadastar__ul {
