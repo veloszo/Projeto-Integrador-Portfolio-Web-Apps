@@ -20,8 +20,8 @@ body {
     font-family: 'Raleway', sans-serif;
     font-size: 1.5rem;
     margin-bottom: 2rem;
-    background: -webkit-linear-gradient(left, #375180 0%, #922A66 100%) ;
-    background: linear-gradient(to right, #3666bb 1%, #922A66 100% );
+    background: -webkit-linear-gradient(left, #375180 100%, #375180 100%) ;
+    background: linear-gradient(to right, #922A66 0%, #375180 100% );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -34,13 +34,6 @@ body {
     margin: 5rem auto;
 }
 
-.formCadastro__geral{
-    display:inline-block;
-    background: #2A2A2A;
-    border: .3rem solid #2A2A2A;
-    border-radius: .5rem;
-    padding: 1.5rem;
-}
 
 .formCadrastro__label , .plataforma__label{
 	font-size: 1.2rem;
@@ -50,13 +43,13 @@ body {
 
 .formCadrastro__input ,.plataforma__input {
     background: transparent;
-    border: 2px solid #425a80;
+    border: 2px solid #922A66; 
     border-radius: .3rem;
     display: flex;
 	padding: .7rem .5rem;
 	margin: 1rem 0 1rem 0;
     font-size: 1.1rem;
-    color:rgb(240, 255, 255);
+    color: #375180;
 }
 
 .plataforma__ul{
@@ -96,8 +89,8 @@ body {
 }
 
 .formCadrastro__label , .plataforma__label , .listaTitulo , .loginDoge {
-    color: rgb(240, 255, 255);
-    background-image: linear-gradient(to right top, #3b5279, #922A66, #425a80, #922A66, #496288);
+    color: #375180;
+    background-image: linear-gradient(to right top, #375180, #375180, #922A66, #922A66, #922A66);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -195,7 +188,7 @@ body {
    }
    
    #enviar:hover {
-    color: #cacfd8;
+    color: #a1aabb;
     background-color: var(--glow-color);
     box-shadow: 0 0 1em .25em var(--glow-color),
            0 0 4em 2em var(--glow-spread-color),

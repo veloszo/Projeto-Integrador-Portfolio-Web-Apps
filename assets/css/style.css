@@ -8,16 +8,6 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-:root{
-    --corprincipal: #0B2B40;
-    --cor1: #13678A;
-    --cor2: #45C4B0;
-    --cor3:#9AEBA3;
-    --cor4: #DAFDBA;
-}
-/*-----------------*/
-
-/* Configs Cabecalho */
 
 .cabecalho_navegacao{
     display: flex;
@@ -33,18 +23,14 @@ body {
 }
 
 .cabecalho_navegacao a{
-    text-decoration: none;
-    text-transform: uppercase;
     font-size: 1.2rem;
-    color: rgb(240, 255, 255);
+    margin-left: 1rem;
 }
 
 .cabecalho_navegacao a:hover{
-    color: #6F5EF8;
+    color: #922A66;
 }
-.cabecalho_navegacao img{
-    width: 1.7rem;
-}
+
 
 .cabecalho_navegacao__logo img{
     width: 100%;
@@ -53,22 +39,10 @@ body {
 
 .navegacao{
     background-color: #302f2f;
-    color: inherit;
-    color:white;
+    
 }
 
-.navegacao li{
-    border-bottom: 5px solid rgb(255, 255, 255);
-    border-radius: 10px;
-    padding: 2px 10px;
-}
 
-.navegacao a{
-    color: inherit;
-    color:white;
-    font-size: 1.4rem;
-}
-/*------------------------*/
 
 .principal {
     height: auto;
@@ -106,37 +80,21 @@ body {
     background-color: rgb(0, 0, 0);
     font-size: 1.2rem;
     border-radius: 0 0 .1rem .1rem;
-    color: rgb(255, 255, 255);
+    color: #e1e1e1;
 }
 
-.destaques__jogos___anchor {
-    color:inherit;
-}
 
-/* Listas Jogos end Lançamentos*/
 
-/* config dos botoes de avançar e retornar */
-
-.botoes {
-    display: flex;
-    justify-content:space-between;
-    margin:0 30%;
-    padding-bottom: 1rem;
-    font-size: .7rem;
-}
 
 
 .rodape {
     background: rgb(20, 20, 20);
     align-items: center;
     text-align: center;
-    color: white;
+    color: #A62E6E;
 }
 
-#logoRodape {
-    margin-top: 1rem;
-    color: black;
-}
+
 
 
 .navegacao{
@@ -149,7 +107,47 @@ body {
 }
 
 .navegacao li{
-    margin:20px 20px;
+    margin:1.7rem 1.4rem;
 }
 
+.paginas {
+    font-size: 18px;
+    color: #e1e1e1;
+    font-family: inherit;
+    font-weight: 800;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+  }
+  
+  .paginas:focus,
+  .paginas:hover {
+    color: #A62E6E;
+  }
+  
+  .paginas:focus:after,
+  .paginas:hover:after {
+    width: 100%;
+    left: 0%;
+  }
+  
+  .paginas:after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #A62E6E ;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+  }
 
+  
