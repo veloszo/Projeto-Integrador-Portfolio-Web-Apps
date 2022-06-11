@@ -3,9 +3,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway2:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 
 body {
     font-family: 'Poppins', sans-serif;
+
 }
 
 
@@ -14,7 +16,19 @@ body {
     justify-content: space-between;    
     align-items: center;
     background-color: #121212;
-    padding: 0 3rem;
+    padding: .5rem 3rem;
+
+}
+
+.img-cabecalho{
+    width: 65%;
+}
+
+.texto_navegacao {
+    color : #922A66;
+    font-size: 3rem;
+    font-family: 'Kaushan Script', cursive;
+    text-transform: uppercase;
 }
 
 .cabecalho_navegacao ul li{
@@ -23,7 +37,7 @@ body {
 }
 
 .cabecalho_navegacao a{
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     margin-left: 1rem;
 }
 
@@ -39,15 +53,15 @@ body {
 
 .navegacao{
     background-color: #302f2f;
-    
+    padding-top: 2rem;    
 }
 
 
 
 .principal {
-    height: auto;
     background-image: linear-gradient(to bottom, #302f2f, #525151, #767676, #9d9c9d, #c5c5c5);
     font-family: 'Poppins', sans-serif;
+    padding-bottom: 5rem;
 }
 
 
@@ -88,7 +102,7 @@ body {
 
 
 .rodape {
-    background: rgb(20, 20, 20);
+    background: rgb(55, 52, 52);
     align-items: center;
     text-align: center;
     color: #A62E6E;
