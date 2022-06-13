@@ -1,6 +1,6 @@
 
 
-const button = document.getElementById('enviar')
+const button = document.getElementById('validar')
 
 button.addEventListener('click', (event) => {
     event.preventDefault()
