@@ -27,7 +27,6 @@ body {
 .texto_navegacao {
     color : #922A66;
     font-size: 3rem;
-    font-family: 'Kaushan Script', cursive;
     text-transform: uppercase;
 }
 
@@ -105,7 +104,7 @@ body {
     background: rgb(55, 52, 52);
     align-items: center;
     text-align: center;
-    color: #A62E6E;
+    color: #ffffffa8;
 }
 
 
