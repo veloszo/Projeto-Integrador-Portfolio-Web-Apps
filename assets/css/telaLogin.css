@@ -3,27 +3,18 @@ main {
 }
 
 body {
-    height: auto;
     background: #121212;
 }
 
-#logoCao{
-    margin-top: 2rem;
-    width: 32%;
-}
 
 .logoCadastro {
     width: 100%;
     display: inline-block;
     align-items: center;
     text-align: center;
-    font-family: 'Raleway', sans-serif;
     font-size: 1.5rem;
     margin-bottom: 2rem;
-    background: -webkit-linear-gradient(left, #375180 100%, #375180 100%) ;
-    background: linear-gradient(to right, #922A66 0%, #375180 100% );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    margin-top: 2rem;
 }
 
 .plataformaForm{
