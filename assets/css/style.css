@@ -17,7 +17,8 @@ body {
     align-items: center;
     background-color: #121212;
     padding: .5rem 3rem;
-
+    box-shadow: #93ADDB 0px -20px 36px -28px inset;
+    
 }
 
 .img-cabecalho{
