@@ -17,7 +17,7 @@ body {
     align-items: center;
     background-color: #121212;
     padding: .5rem 3rem;
-    box-shadow: #93ADDB 0px -20px 36px -28px inset;
+    box-shadow: #922A66 0px -20px 36px -28px inset;
     
 }
 
@@ -106,6 +106,7 @@ body {
     align-items: center;
     text-align: center;
     color: #ffffffa8;
+    box-shadow: #922A66 0px 10px 60px -28px inset;
 }
 
 

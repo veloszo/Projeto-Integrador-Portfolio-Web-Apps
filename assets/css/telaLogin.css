@@ -6,6 +6,10 @@ body {
     background: #121212;
 }
 
+#img-Doge{
+    opacity: 0.66;
+    width: 10rem;
+}
 
 .logoCadastro {
     width: 100%;
@@ -72,7 +76,7 @@ body {
 .formCadastro__geral{
    display:inline-block;
    background: #2A2A2A;
-   border: .3rem solid rgb(240, 255, 255);
+   border: .3rem solid #375180;
    border-radius: .5rem;
    padding: 0 1.5rem 1.5rem 1.5rem;
 
@@ -81,7 +85,7 @@ body {
 
 .formCadrastro__label , .plataforma__label , .listaTitulo , .loginDoge {
     color: #375180;
-    background-image: linear-gradient(to right top, #375180, #375180, #922A66, #922A66, #922A66);
+    background-image: linear-gradient(to left top, #375180, #375180, #375180, #922A66, #922A66, #922A66);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
