@@ -72,6 +72,7 @@ body {
     flex-wrap: wrap;
     max-width: 70rem;
     margin: 0 auto;
+    
 
 }
 
@@ -79,7 +80,6 @@ body {
     width: 100%;
     display: block;
     border-radius: .6rem .6rem 0 0;
-
 }
 
 .principal__jogos div {
@@ -95,6 +95,7 @@ body {
     font-size: 1.2rem;
     border-radius: 0 0 .1rem .1rem;
     color: #e1e1e1;
+    box-shadow: #922A66 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
 
 
@@ -106,7 +107,7 @@ body {
     align-items: center;
     text-align: center;
     color: #ffffffa8;
-    box-shadow: #922A66 0px 10px 60px -28px inset;
+    box-shadow: #922A66 0px 2px 4px 0px inset;
 }
 
 
@@ -165,4 +166,32 @@ body {
     transition-property: width, left;
   }
 
-  
+  @media screen and (max-width: 800px) {
+
+
+    .navegacao{
+        width: 100%;
+        display: flex;
+    }
+
+    .navegacao ul{
+        margin: auto;
+    }
+
+    .navegacao li{
+        justify-content: space-between;    
+        margin: auto;
+        padding: 0.5rem;
+    }
+  }
+
+  @media screen and (max-width: 395px) {
+
+    .navegacao{
+        display: flex;
+    }
+
+    .navegacao ul{
+        display: block;
+    }
+  }

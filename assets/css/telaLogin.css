@@ -212,7 +212,7 @@ body {
 
 @media screen and (max-width: 1040px) {
 
-    .formCadastro__geral{
+    .cabecalho_navegacao__cadastrar, .cabe{
         width: 100%;
     }
 
