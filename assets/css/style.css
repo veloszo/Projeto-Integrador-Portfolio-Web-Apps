@@ -2,51 +2,30 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway2:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 
-/*-----------------*/
+body {
+    font-family: 'Poppins', sans-serif;
 
-/* Configs Cabecalho */
-.cabecalho_sociais{
-    display: flex;
-    justify-content: space-between;
-    background-color: #2A2A2A;
-    position: relative;
-    align-items: center;
-}
-
-.cabecalho_sociais  ul li{
-    display: inline-block;
-    color: rgba(240, 255, 255, 0.822);
-    text-decoration: none;
-    font-family: 'Raleway', sans-serif;
-}
-
-.cabecalho_sociais a{
-    text-decoration: none;
-    color: rgb(240, 255, 255);
-    margin: 0 1.5rem; 
-    text-transform: uppercase;
-    font-size: .8rem;
-    font-weight: bold;
-}
-
-.cabecalho_sociais img{
-    width: 1.2rem;
-    padding-top: .20rem;
-}
-
-.instagram {
-    padding-left: .5rem;
-}
-.cabecalho_sociais__nav___cadastrar a{
-    color: #7966FF;
 }
 
 .cabecalho_navegacao{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between;    
     align-items: center;
     background-color: #121212;
+    padding: .5rem 3rem;
+    box-shadow: #922A66 0px -20px 36px -28px inset;
+    
+}
+
+.img-cabecalho {
+    width: 65%;
+}
+
+.texto_navegacao {
+    margin-left: 6rem;
 }
 
 .cabecalho_navegacao ul li{
@@ -55,91 +34,33 @@
 }
 
 .cabecalho_navegacao a{
-    text-decoration: none;
-    margin: 0 1rem; 
-    text-transform: uppercase;
-    font-size: 1.2rem;
-    font-weight: 300;
-    color: rgb(240, 255, 255);
+    font-size: 1.4rem;
+    margin-left: 1rem;
 }
 
 .cabecalho_navegacao a:hover{
-    color: #6F5EF8;
-}
-.cabecalho_navegacao img{
-    width: 8rem;
-}
-
-.cabecalho_navegacao__logo{
-    display: flex;
-    align-items: center;
-}
-
-.cabecalho_navegacao__logo h3{
-    font-weight: 550;
-    text-transform: uppercase;
-    font-family: 'Raleway2', sans-serif;
-    font-size: 2rem;
-    background-image: linear-gradient(to right top, #4f36ff, #6851ff, #7e6aff, #9181fd, #a497fa);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    line-height: 2.2;
-}
-
-.cabecalho_navegacao__cadastrar a{
-    font-family: 'Raleway', sans-serif;
-    margin-left: 9rem;
-}
-
-.cabecalho_navegacao__cadastrar a{
-    padding-right: .80rem;
+    color: #922A66;
 }
 
 
-.cabecalho_navegacao__cadastrar li a{
-    font-size: 8px;
-    text-decoration: none;
-    list-style: none;
+.cabecalho_navegacao__logo img{
+    width: 100%;
 }
-/*------------------------*/
+
+
+.navegacao{
+    background-color: #302f2f;
+    padding-top: 2rem;    
+}
+
+
 
 .principal {
-    height: auto;
-    background: linear-gradient(to right top, #2d4286, #263578, #1f286a, #181b5c, #110e4e);
-    font-family: 'Press Start 2P', cursive;
+    background-image: linear-gradient(to bottom, #302f2f, #525151, #767676, #9d9c9d, #c5c5c5);
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 5rem;
 }
 
-/* Listas start*/
-.principal__categorias___lista {
-    display: flex;
-    justify-content: center;
-    
-}
-
-.principal__categorias___item {
-    height: auto;
-    text-transform: uppercase;
-    padding-left: 1rem;
-    padding: 1rem;
-
-}
-
-.destaques__categorias___link {
-    display: flex;
-    background-color: #72146d;
-    color: rgb(0, 0, 0);
-    border: solid 3px #2e0563;
-    border-radius: 10px;
-    padding: .6rem;
-    font-size: 1rem;
-
-}
-
-i {
-    padding-right: .3rem;
-}
-/* Listas end*/
 
 /* Listas Jogos Start Lançamentos*/
 
@@ -148,6 +69,7 @@ i {
     flex-wrap: wrap;
     max-width: 70rem;
     margin: 0 auto;
+    
 
 }
 
@@ -155,7 +77,6 @@ i {
     width: 100%;
     display: block;
     border-radius: .6rem .6rem 0 0;
-
 }
 
 .principal__jogos div {
@@ -167,42 +88,123 @@ i {
     display: flex;
     justify-content:center;
     padding: .3rem;
-    background-color: #1f5f9b;
-    font-size: .95rem;
+    background-color: rgb(0, 0, 0);
+    font-size: 1.2rem;
     border-radius: 0 0 .1rem .1rem;
-    color: aqua;
+    color: #e1e1e1;
+    box-shadow: #922A66 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
 
-.destaques__jogos___anchor {
-    color:inherit;
-}
 
-/* Listas Jogos end Lançamentos*/
 
-/* config dos botoes de avançar e retornar */
-
-.botoes {
-    display: flex;
-    justify-content:space-between;
-    margin:0 30%;
-    padding-bottom: 1rem;
-    font-size: .7rem;
-}
 
 
 .rodape {
-    display:flex;
-    background: rgb(27, 121, 150);
+    background: rgb(55, 52, 52);
     align-items: center;
     text-align: center;
+    color: #ffffffa8;
+    box-shadow: #922A66 0px 2px 4px 0px inset;
+}
+
+
+
+
+.navegacao{
+    display: flex;
     justify-content: center;
 }
 
-#logoRodape {
-    margin-top: 1rem;
-    color: black;
+.navegacao ul{
+    display: flex;
 }
 
-.rodapeTexto {
-    margin-bottom: 2rem;
+.navegacao li{
+    margin:1.7rem 1.4rem;
+}
+
+.paginas {
+    font-size: 18px;
+    color: #e1e1e1;
+    font-family: inherit;
+    font-weight: 800;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+  }
+  
+  .paginas:focus,
+  .paginas:hover {
+    color: #A62E6E;
+  }
+  
+  .paginas:focus:after,
+  .paginas:hover:after {
+    width: 100%;
+    left: 0%;
+  }
+  
+  .paginas:after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #A62E6E ;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+  }
+
+  @media screen and (max-width: 800px) {
+
+
+    .navegacao{
+        width: 100%;
+        display: flex;
+    }
+
+    .navegacao ul{
+        margin: auto;
+    }
+
+    .navegacao li{
+        justify-content: space-between;    
+        margin: auto;
+        padding: 0.5rem;
+    }
+  }
+
+  @media screen and (max-width: 395px) {
+
+    .navegacao{
+        display: flex;
+    }
+
+    .navegacao ul{
+        display: block;
+    }
+  }
+
+::-webkit-scrollbar{
+    width: 8px;
+    
+}
+::-webkit-scrollbar-track{
+    
+    border-radius: 0px;
+    background: #000000;
+    
+}
+::-webkit-scrollbar-thumb{
+    background-color: #922a67c0;
+    border-radius: 0px; 
+    
 }

@@ -1,22 +1,24 @@
 main {
     font-family: 'Press Start 2P', cursive;
-
 }
 
 body {
-    height: auto;
     background: #121212;
+}
+
+#img-Doge{
+    opacity: 0.66;
+    width: 10rem;
 }
 
 .logoCadastro {
     width: 100%;
-    margin-bottom: 2rem;
     display: inline-block;
     align-items: center;
     text-align: center;
-    font-family: 'Raleway', sans-serif;
     font-size: 1.5rem;
-    color:white;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
 }
 
 .plataformaForm{
@@ -24,48 +26,38 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin: 10rem auto;
+    margin: 5rem auto;
 }
 
-.formCadastro__geral{
-    display:inline-block;
-    background: #2A2A2A;
-    border: .3rem solid #2A2A2A;
-    border-radius: .5rem;
-    padding: 1.5rem;
-}
 
 .formCadrastro__label , .plataforma__label{
 	font-size: 1.2rem;
-	margin: 0rem 1rem 1rem 0rem;
+	margin: 1rem 1rem 1rem 0rem;
     font-weight: bold;
 }
 
 .formCadrastro__input ,.plataforma__input {
     background: transparent;
-    border: 2px solid #ffffff;
+    border: 2px solid #922A66; 
     border-radius: .3rem;
     display: flex;
-	padding: .7rem .6rem;
-	margin: .7rem 0 .7rem 0;
+	padding: .7rem .5rem;
+	margin: 1rem 0 1rem 0;
     font-size: 1.1rem;
-    color:#ffffff;
-
+    color: #375180;
 }
 
 .plataforma__ul{
     display: flex;
-    padding-top: 1rem;
+    padding-top: 1.5rem;
     margin-left: .2rem;
     align-items: center;
- 
 }
 
 .plataforma__li {
     font-size: 1rem;
     text-align: center;
     width: 6.8rem;
-    border: 2px solid #ffffff;
     border-radius: .3rem;
     padding: .7rem .2rem .7rem .2rem;
     font-weight: bold;
@@ -73,14 +65,9 @@ body {
     Transition: 1s all;
 }
 
-.plataforma__li:hover {
-    border: 3px solid black;
-    Transform: scale(1.1); 
-    Cursor: pointer;
-    
-}
 
-.formCadastro #enviar:hover {
+
+.formCadastro #validar:hover {
    Transform: scale(1.1); 
    Cursor: pointer;
 }
@@ -89,14 +76,16 @@ body {
 .formCadastro__geral{
    display:inline-block;
    background: #2A2A2A;
-   border: .3rem solid #2A2A2A;
+   border: .3rem solid #375180;
    border-radius: .5rem;
    padding: 0 1.5rem 1.5rem 1.5rem;
+
+   box-shadow: inset 0 0 1em  #A62E6E, 0 0 1em;
 }
 
 .formCadrastro__label , .plataforma__label , .listaTitulo , .loginDoge {
-    color:#ffffff;
-    background-image: linear-gradient(to right top, #4f36ff, #6851ff, #7e6aff, #9181fd, #a497fa);
+    color: #375180;
+    background-image: linear-gradient(to left top, #375180, #375180, #375180, #922A66, #922A66, #922A66);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -113,19 +102,10 @@ body {
     margin-bottom: 1rem ;
 }
 
-.plataformaImg {
-    width: 30%;
-}
 
 .listaTitulo {
     font-size: .9rem;
 }
-
-#pc, #console, #mobile {
-    margin-right: 4.5px;
-   
-}
-
 
 .submit {
     display: flex;
@@ -138,7 +118,7 @@ body {
     
     display: inline-block;
     font-family: 'Courier New', Courier, monospace;
-    color:white;
+    color:rgb(240, 255, 255);
     font-size: 1rem;
     margin-left: 0.4rem;
 }
@@ -147,25 +127,9 @@ body {
     margin: 1rem auto;
 }
 
-#checkbox1, #checkbox2 {
-    color:transparent;
+.descricaoCadastar__a{
+    color: rgb(240, 255, 255);
 }
-
-
-#enviar {
-    display: flex;
-    font-size: 1rem;
-    padding: 1rem 7rem;
-    margin: 1rem auto;
-    background:#2a2a2a;
-    text-transform: uppercase;
-    Transition: 1s all;
-    border-radius: .5rem;
-    color: white;
-    background: rgb(46, 46, 224);
-
-}
-
 
 .descricaoCadastar__ul {
     display: flex;
@@ -179,10 +143,96 @@ body {
     display: block;
     font-family: 'Courier New', Courier, monospace;
     font-size: 1.1rem;
-    color:white;
+    color: rgb(240, 255, 255);
 }
 
-.descricaoCadastar__a {
-    color:white;
-    text-decoration: none;
+
+#validar {
+    --glow-color: #922a67;
+    --glow-spread-color: #922A66;
+    --enhanced-glow-color: #425a80;
+    --btn-color: rgba(59, 82, 121, 0);
+    border: .25em solid var(--glow-color);
+    padding: 1em 3em;
+    color: var(--glow-color);
+    font-size: 15px;
+    font-weight: bold;
+    background-color: var(--btn-color);
+    border-radius: 1em;
+    outline: none;
+    box-shadow: 0 0 11em .2em var(--glow-color),
+           0 0 1em 0em var(--glow-spread-color),
+           inset 0 0 .75em .25em var(--glow-color);
+    text-shadow: 0 0 .5em var(--glow-color);
+    position: relative;
+    transition: all 0.3s;
+   }
+   
+   #validar::after {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--glow-spread-color);
+    filter: blur(2em);
+    opacity: .7;
+    transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+   }
+   
+   #validar:hover {
+    color: #a1aabb;
+    background-color: var(--glow-color);
+    box-shadow: 0 0 1em .25em var(--glow-color),
+           0 0 4em 2em var(--glow-spread-color),
+           inset 0 0 .75em .25em var(--glow-color);
+   }
+   
+   #validar:active {
+    box-shadow: 0 0 0.6em .25em var(--glow-color),
+           0 0 2.5em 2em var(--glow-spread-color),
+           inset 0 0 .5em .25em var(--glow-color);
+   }
+
+
+
+/* SUCESSO E ERROR */
+
+.inputError{
+    border: .3rem solid #DB5A5a  !important ;
+    box-shadow: inset 0 0 1em  #DB5A5a, 0 0 0rem !important;
+}
+
+
+
+
+
+
+@media screen and (max-width: 1040px) {
+
+    .cabecalho_navegacao__cadastrar, .cabe{
+        width: 100%;
+    }
+
+    .formCadrastro__input{
+        width: 100%;
+    }
+
+    .plataforma__ul, .plataforma__input{
+        display: inline-block;
+        margin: 0%;
+        align-items: center;
+    }
+
+    .plataforma__li {
+       margin: 0%;
+    }
+
+    #pc, #console, #mobile {
+        display: flex;
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
 }
