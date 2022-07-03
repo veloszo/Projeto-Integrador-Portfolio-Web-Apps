@@ -20,12 +20,8 @@ body {
     
 }
 
-.img-cabecalho {
-    width: 65%;
-}
-
 .texto_navegacao {
-    margin-left: 6rem;
+    margin-left: 5rem;
 }
 
 .cabecalho_navegacao ul li{
@@ -165,6 +161,13 @@ body {
 
   @media screen and (max-width: 800px) {
 
+    .cabecalho_navegacao{
+        flex-direction: column;
+    }
+
+    #img-Doge{
+     padding-right: 5rem;   
+    }
 
     .navegacao{
         width: 100%;
@@ -186,6 +189,7 @@ body {
 
     .navegacao{
         display: flex;
+        text-align: center;
     }
 
     .navegacao ul{
