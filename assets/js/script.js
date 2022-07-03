@@ -52,4 +52,6 @@ button.addEventListener('click', (event) => {
         confirmarSenha.classList.add("inputError")
         senha.classList.add("inputError")
     }
+
+    
 })

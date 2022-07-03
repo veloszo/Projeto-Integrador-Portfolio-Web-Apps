@@ -21,7 +21,7 @@ body {
 }
 
 .texto_navegacao {
-    margin-left: 6rem;
+    margin-left: 5rem;
 }
 
 .cabecalho_navegacao ul li{
@@ -189,6 +189,7 @@ body {
 
     .navegacao{
         display: flex;
+        text-align: center;
     }
 
     .navegacao ul{
